@@ -18,12 +18,12 @@ func main() {
 	flag.Parse()
 
 	scanner := bufio.NewScanner(os.Stdin)
-
 	go func() {
 		for scanner.Scan() {
 			fmt.Println(scanner.Text())
 			time.Sleep(time.Duration(*waitTime) * time.Second)
 		}
 	}()
+
 	<-c
 }
