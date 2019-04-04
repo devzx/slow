@@ -14,7 +14,7 @@ mv slow /usr/local/bin
 ### Flags
 `-wait int`
 
-time to wait in seconds between printing output
+Time to wait in seconds between printing output (default 1)
 
 ### Examples
 `kubectl logs <some nginx pod> | slow`
