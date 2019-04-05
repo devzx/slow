@@ -23,6 +23,7 @@ func main() {
 			fmt.Println(scanner.Text())
 			time.Sleep(time.Duration(*waitTime) * time.Second)
 		}
+		c <- syscall.SIGINT
 	}()
 
 	<-c
