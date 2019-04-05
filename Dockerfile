@@ -6,4 +6,4 @@ RUN go build *.go
 FROM alpine:3.9.2
 COPY --from=builder /app/slow /usr/bin
 
-CMD ["./slow"]
+ENTRYPOINT ["slow"]
