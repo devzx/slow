@@ -1,4 +1,7 @@
 # Slow
+[![Build Status](https://travis-ci.org/devzx/slow.svg?branch=master)](https://travis-ci.org/devzx/slow)
+----
+
 Takes the output of commands like `kubectl logs` and `stern`, and outputs them ...slowly
 
 ### Build
