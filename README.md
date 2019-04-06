@@ -31,7 +31,7 @@ Binary
 
 Docker
 
-`kubectl logs <pod> | docker run -i slow -wait 1  -`
+`kubectl logs <pod> | docker run -i --rm slow -wait 1  -`
 
 `stern <pod> | slow -wait 2`
 
