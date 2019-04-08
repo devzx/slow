@@ -25,16 +25,16 @@ Time to wait in seconds between printing output (default 1)
 ### Examples
 ##### Binary
 
-`kubectl logs <pod> | slow`
+`$ kubectl logs <pod> | slow`
 
-`stern <pod> | slow -wait 2`
+`$ stern <pod> | slow -wait 2`
 
 ##### Docker
 
-`kubectl logs <pod> | docker run -i --rm slow -wait 1  -`
+`$ kubectl logs <pod> | docker run -i --rm slow -wait 1  -`
 
-`stern <pod> | slow -wait 2`
+`$ stern <pod> | slow -wait 2`
 
 ##### Prebuilt Docker image
 
-`kubectl logs <pod> | docker run -i --rm devzx/slow -`
+`$ kubectl logs <pod> | docker run -i --rm devzx/slow -`
