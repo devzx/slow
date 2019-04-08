@@ -7,14 +7,14 @@ Takes the output of commands like `kubectl logs` and `stern`, and outputs them .
 ### Build
 From source
 ```sh
-$ git clone git@github.dns.ad.zopa.com:zopaUK/slow.git
+$ git clone git@github.com:devzx/slow.git
 $ cd slow
 $ go build slow.go
 $ mv slow /usr/local/bin
 ```
 Docker
 ```sh
-$ git clone git@github.dns.ad.zopa.com:zopaUK/slow.git
+$ git clone git@github.com:devzx/slow.git
 $ cd slow
 $ docker build -t slow .
 ```
