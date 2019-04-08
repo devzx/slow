@@ -5,14 +5,14 @@
 Takes the output of commands like `kubectl logs` and `stern`, and outputs them ...slowly
 
 ### Build
-From source
+##### From source
 ```sh
 $ git clone git@github.com:devzx/slow.git
 $ cd slow
 $ go build slow.go
 $ mv slow /usr/local/bin
 ```
-Docker
+##### Docker
 ```sh
 $ git clone git@github.com:devzx/slow.git
 $ cd slow
@@ -23,18 +23,18 @@ $ docker build -t slow .
 
 Time to wait in seconds between printing output (default 1)
 ### Examples
-Binary
+##### Binary
 
 `kubectl logs <pod> | slow`
 
 `stern <pod> | slow -wait 2`
 
-Docker
+##### Docker
 
 `kubectl logs <pod> | docker run -i --rm slow -wait 1  -`
 
 `stern <pod> | slow -wait 2`
 
-Prebuilt image
+##### Prebuilt Docker image
 
 `kubectl logs <pod> | docker run -i --rm devzx/slow -`
